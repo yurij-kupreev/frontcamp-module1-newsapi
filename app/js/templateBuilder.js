@@ -21,6 +21,10 @@ class TemplateBuilder{
     getArticlesHtml(articles){
         return articles.map(article => this.htmlHelper.renderHtml`
             <article>
+                <div class="source-bar">
+                    <div class="byline">${article.author}</div>
+                    <div class="publishat">${article.publishedAt}</div>
+                </div>
                 <div class="image">
                     <a href="${article.url}">
                         <img src="${article.urlToImage}">
@@ -31,8 +35,6 @@ class TemplateBuilder{
                         <h3>${article.title}</h3>
                         <p>${article.description}</p>
                     </a>
-                    <div class="publishat">${article.publishedAt}</div>
-                    <div class="byline">${article.author}</div>
                 </div>
             </article>`).join("");
     }

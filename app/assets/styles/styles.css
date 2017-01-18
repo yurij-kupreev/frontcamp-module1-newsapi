@@ -4,7 +4,7 @@
 #wrapper{
     max-width: 960px;
     margin: auto;
-    border: 2px solid #4c59f3;
+    border: 2px solid #666;
 }
 footer sup{
     font-size: 0.7em;
@@ -41,12 +41,12 @@ footer a:hover{
     padding-bottom: 5px;
 }
 article{
-    margin: 10px 0;
+    margin: 0 0 40px;
     display: block;
 }
 article .image{
     float: left;
-    margin: 0 10px;
+    margin: 0 10px 0 0;
 }
 article::after {
     content:"";
@@ -73,7 +73,43 @@ article .asset h3{
     font-family: Panton,sans-serif;
     font-weight: 600;
     letter-spacing: -.009em;
+    margin : 0;
 }
 article .asset h3:hover{
     color: var(--link-hover);
+}
+article .asset p{
+    font-size: .941em;
+    line-height: 1.25em;
+}
+article .source-bar{
+    color: #666;
+    font-size: 13px;
+    margin: 0 0 5px;
+    overflow: auto;
+}
+article .source-bar .publishat{
+    font-weight: bold;
+}
+article .source-bar .byline{
+    font-weight: bold;
+    color: #ff803f;
+}
+header{
+    text-align: center;
+    color: #29c5e6;
+    font-size: 2.32em;
+    line-height: 1.1em;
+    font-family: Proxima Nova,Proxima-Nova,proxima-nova,Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 20px;
+}
+footer{
+    color: #bbbbbb;
+    text-align: center;
+    margin: 35px auto;
+}
+.articles-container{
+    margin: 20px 10px 0;
 }
