@@ -20,6 +20,7 @@ class NewsApp{
 				let articles = jsonResponse.articles.map(article => this._getObjProxy(article));
 
 				let artcilesHtml = this.templateBuilder.getArticlesHtml(articles);
+				//throw new Error();
 
 				this.htmlHelper.fillElement(this.newsElementId, artcilesHtml || this.templateBuilder.getInfoHtml(WarningMessage));
 			})
