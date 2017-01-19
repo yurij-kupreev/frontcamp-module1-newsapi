@@ -1,5 +1,5 @@
 :root {
-	--link-hover: #29c5e6;
+	--link-hover: #75151C;
 }
 #wrapper{
     max-width: 960px;
@@ -86,7 +86,7 @@ article .source-bar .byline{
 }
 header{
     text-align: center;
-    color: #29c5e6;
+    color: var(--link-hover);
     font-size: 2.32em;
     line-height: 1.1em;
     font-family: Proxima Nova,Proxima-Nova,proxima-nova,Helvetica,Arial,sans-serif;
