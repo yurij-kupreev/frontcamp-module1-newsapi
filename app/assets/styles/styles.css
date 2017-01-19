@@ -4,7 +4,6 @@
 #wrapper{
     max-width: 960px;
     margin: auto;
-    border: 2px solid #666;
 }
 footer sup{
     font-size: 0.7em;
@@ -41,20 +40,10 @@ footer a:hover{
     padding-bottom: 5px;
 }
 article{
-    margin: 0 0 40px;
-    display: block;
-}
-article .image{
-    float: left;
-    margin: 0 10px 0 0;
-}
-article::after {
-    content:"";
-    display:block;
-    clear:both;
-}
-article .image {
-    width: 30%;
+    margin: 0 0 35px;
+    padding: 0 5px;
+    display: inline-table;
+    max-width: 458px;
 }
 article .image img{
     height: auto;
