@@ -1,3 +1,5 @@
+"use strict";
+
 window.onload = () => MainFunc();
 
 function MainFunc() {
